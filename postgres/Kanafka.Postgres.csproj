@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Kanafka.Postgres</RootNamespace>
+        <AssemblyName>Kanafka.Postgres</AssemblyName>
+        <PackageId>Kanafka.Postgres</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Anton Yanchev</Authors>
+        <Company>Kanafka</Company>
+        <Product>Kanafka Postgres StorageProvider</Product>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageTags>Kafka;Kanafka;Postgres;Messaging;Broker</PackageTags>
+        <PackageIcon>logo.png</PackageIcon>
+        <RepositoryUrl>https://github.com/toniyanchev/kanafka-dotnet-storage-providers</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Kanafka.Core" Version="0.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+        <None Include="../LICENSE" Pack="true" PackagePath="/"/>
+        <None Include="../logo.png" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+  
+</Project>
