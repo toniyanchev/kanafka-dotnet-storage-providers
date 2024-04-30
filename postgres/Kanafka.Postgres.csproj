@@ -20,8 +20,8 @@
 
     <ItemGroup>
         <!--        <PackageReference Include="Kanafka.Core" Version="0.0.1"/>-->
-        
-<!--        TODO - For dev only, in Prod the package will come from Kanafka.Core-->
+
+        <!--        TODO - For dev only, in Prod the package will come from Kanafka.Core-->
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
         <PackageReference Include="Npgsql" Version="8.0.2"/>
         <!--        Dev only-->
@@ -32,6 +32,9 @@
         <None Include="../README.md" Pack="true" PackagePath="/"/>
         <None Include="../LICENSE" Pack="true" PackagePath="/"/>
         <None Include="../logo.png" Pack="true" PackagePath="/"/>
+        <None Update="init_tables.sql" Pack="true">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>
