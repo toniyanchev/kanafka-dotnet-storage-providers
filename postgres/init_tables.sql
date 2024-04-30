@@ -13,7 +13,6 @@ create table if not exists kanafka.failed_messages(
 	exception_stack_trace text,
     inner_exception_type text,
 	inner_exception_message text,
-	inner_exception_stack_trace text,
 	retries int4 default 0 not null,
 	archived_on timestamp
 );
